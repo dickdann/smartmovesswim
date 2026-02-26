@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartMoves Swim — Curriculum & Progress System for Swim Schools</title>
+  <meta name="description" content="Standardize your swim lessons, track every student's skills, and show parents measurable progress — all in one simple platform." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%230EA5E9'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='bold' fill='white'>S</text></svg>" type="image/svg+xml" />
+</head>
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__brand">
+        <img class="navbar__logo" src="images/sms.jpg" alt="SmartMoves Swim" />
+      </a>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#problem">Why SmartMoves</a></li>
+        <li><a href="#solution">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#demo" class="btn btn--sm btn--primary">Book a Demo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero__bg">
+      <!-- Placeholder hero image via gradient + pattern -->
+      <div class="hero__img" role="img" aria-label="Swim instructor teaching young children in a bright pool"></div>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <h1 class="hero__headline">The Curriculum &amp; Progress System<br/>Built for Swim Schools</h1>
+      <p class="hero__sub">Standardize your lessons, track every student's skills, and show parents measurable progress&nbsp;— all in one simple platform.</p>
+      <div class="hero__ctas">
+        <a href="#demo" class="btn btn--primary btn--lg">Book a Demo</a>
+        <a href="#how-it-works" class="btn btn--outline btn--lg">See How It Works</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SECTION 1 – THE PROBLEM ===== -->
+  <section class="section section--problem" id="problem">
+    <div class="container grid grid--2col">
+      <div class="problem__text" data-animate="fade-right">
+        <span class="section__label">The Challenge</span>
+        <h2>Swim Schools Struggle With</h2>
+        <ul class="problem__list">
+          <li>
+            <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Inconsistent instructors
+          </li>
+          <li>
+            <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            No structured skill tracking
+          </li>
+          <li>
+            <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Parents asking <em>"When will my child level up?"</em>
+          </li>
+          <li>
+            <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Time wasted building lesson plans
+          </li>
+          <li>
+            <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Poor retention due to invisible progress
+          </li>
+        </ul>
+        <p class="problem__statement">Without structure, growth becomes chaos.</p>
+      </div>
+      <div class="problem__image" data-animate="fade-left">
+        <!-- Illustrated placeholder: instructor with clipboard -->
+        <div class="placeholder-img placeholder-img--problem">
+          <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="360" rx="16" fill="#EFF6FF"/>
+            <!-- Pool water -->
+            <rect y="220" width="480" height="140" rx="0" fill="#BAE6FD"/>
+            <path d="M0 240c40-10 80 10 120 0s80-10 120 0 80 10 120 0 80-10 120 0" stroke="#7DD3FC" stroke-width="2" fill="none"/>
+            <path d="M0 260c40-10 80 10 120 0s80-10 120 0 80 10 120 0 80-10 120 0" stroke="#7DD3FC" stroke-width="2" fill="none" opacity=".5"/>
+            <!-- Instructor figure -->
+            <circle cx="200" cy="140" r="30" fill="#1E3A5F"/>
+            <rect x="180" y="175" width="40" height="60" rx="8" fill="#1E3A5F"/>
+            <!-- Clipboard -->
+            <rect x="230" y="160" width="40" height="55" rx="4" fill="#fff" stroke="#94A3B8" stroke-width="2"/>
+            <line x1="238" y1="175" x2="262" y2="175" stroke="#CBD5E1" stroke-width="2"/>
+            <line x1="238" y1="185" x2="258" y2="185" stroke="#CBD5E1" stroke-width="2"/>
+            <line x1="238" y1="195" x2="255" y2="195" stroke="#CBD5E1" stroke-width="2"/>
+            <!-- Question marks -->
+            <text x="320" y="130" font-size="32" fill="#F59E0B" font-weight="bold">?</text>
+            <text x="350" y="160" font-size="24" fill="#F59E0B" font-weight="bold" opacity=".6">?</text>
+            <!-- Parents on side -->
+            <circle cx="400" cy="180" r="18" fill="#64748B"/>
+            <rect x="388" y="200" width="24" height="35" rx="5" fill="#64748B"/>
+            <circle cx="440" cy="175" r="16" fill="#94A3B8"/>
+            <rect x="430" y="194" width="20" height="30" rx="5" fill="#94A3B8"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2 – THE SOLUTION ===== -->
+  <section class="section section--solution" id="solution">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">The Platform</span>
+        <h2>SmartMoves Swim Solves This</h2>
+      </div>
+      <div class="grid grid--3col">
+        <!-- Feature 1 -->
+        <div class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-card__icon feature-card__icon--blue">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="8" stroke="currentColor" stroke-width="2.5"/><path d="M16 18h16M16 24h12M16 30h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Structured Swim Curriculum</h3>
+          <p>Digitize and standardize your entire swim program.</p>
+          <ul>
+            <li>Pre-built level frameworks</li>
+            <li>Skill-based progression ladders</li>
+            <li>Instructor lesson guides</li>
+            <li>Fully customizable to your school</li>
+          </ul>
+        </div>
+        <!-- Feature 2 -->
+        <div class="feature-card" data-animate="fade-up" data-delay="1">
+          <div class="feature-card__icon feature-card__icon--navy">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4v8m0 24v8M4 24h8m24 0h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2.5"/><path d="M20 24l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Student Skill Tracking</h3>
+          <p>Track progress against clearly defined benchmarks.</p>
+          <ul>
+            <li>Simple skill checklists</li>
+            <li>"Ready to Level Up" indicators</li>
+            <li>Instructor notes</li>
+            <li>Progress history per student</li>
+          </ul>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card" data-animate="fade-up" data-delay="2">
+          <div class="feature-card__icon feature-card__icon--aqua">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="4" width="32" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M16 16h16M16 22h12M16 28h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="34" r="8" fill="#fff" stroke="currentColor" stroke-width="2.5"/><path d="M31 34l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Parent-Ready Reports &amp; Certificates</h3>
+          <p>Show parents measurable improvement and celebrate milestones.</p>
+          <ul>
+            <li>Auto-generated progress reports</li>
+            <li>Branded certificates</li>
+            <li>Clear next-level recommendations</li>
+            <li>Professional PDF exports</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3 – HOW IT WORKS ===== -->
+  <section class="section section--steps" id="how-it-works">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Simple Process</span>
+        <h2>How It Works</h2>
+      </div>
+      <div class="steps" data-animate="fade-up">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3>Define Your Levels</h3>
+          <p>Create or import your swim levels and skill ladders.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3>Deliver Structured Lessons</h3>
+          <p>Instructors follow standardized session guides.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3>Track Skills</h3>
+          <p>Mark skills as achieved during lessons.</p>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3>Show Progress</h3>
+          <p>Generate reports and celebrate milestones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4 – BENEFITS ===== -->
+  <section class="section section--benefits" id="benefits">
+    <div class="container grid grid--2col grid--reverse">
+      <div class="benefits__image" data-animate="fade-right">
+        <!-- Dashboard mockup -->
+        <div class="dashboard-mockup">
+          <div class="dashboard-mockup__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+          </div>
+          <div class="dashboard-mockup__body">
+            <div class="mock-sidebar">
+              <div class="mock-sidebar__item mock-sidebar__item--active"></div>
+              <div class="mock-sidebar__item"></div>
+              <div class="mock-sidebar__item"></div>
+              <div class="mock-sidebar__item"></div>
+            </div>
+            <div class="mock-main">
+              <div class="mock-header">
+                <div class="mock-title"></div>
+                <div class="mock-badge">Ready to Level Up</div>
+              </div>
+              <div class="mock-students">
+                <div class="mock-student-row">
+                  <div class="mock-avatar"></div>
+                  <div class="mock-name"></div>
+                  <div class="mock-checks">
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                  </div>
+                  <span class="mock-level-badge">↑ Level Up</span>
+                </div>
+                <div class="mock-student-row">
+                  <div class="mock-avatar"></div>
+                  <div class="mock-name"></div>
+                  <div class="mock-checks">
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--pending"></span>
+                    <span class="mock-check mock-check--pending"></span>
+                  </div>
+                  <span class="mock-progress-text">3 / 5</span>
+                </div>
+                <div class="mock-student-row">
+                  <div class="mock-avatar"></div>
+                  <div class="mock-name"></div>
+                  <div class="mock-checks">
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--pending"></span>
+                    <span class="mock-check mock-check--pending"></span>
+                    <span class="mock-check mock-check--pending"></span>
+                  </div>
+                  <span class="mock-progress-text">2 / 5</span>
+                </div>
+                <div class="mock-student-row">
+                  <div class="mock-avatar"></div>
+                  <div class="mock-name"></div>
+                  <div class="mock-checks">
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--done">✓</span>
+                    <span class="mock-check mock-check--pending"></span>
+                  </div>
+                  <span class="mock-progress-text">4 / 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="benefits__text" data-animate="fade-left">
+        <span class="section__label">Results</span>
+        <h2>Built for Growth &amp; Retention</h2>
+        <ul class="benefits__list">
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Improve student retention
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Reduce instructor inconsistency
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Speed up onboarding
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Professionalize your brand
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Scale to multiple locations
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION – INSTRUCTOR TRAINING ===== -->
+  <section class="section section--training" id="training">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Instructor Training</span>
+        <h2>Stop Losing Knowledge When Staff Walk Out the Door</h2>
+        <p class="section__subtitle">Swim schools face constant instructor turnover. SmartMoves ensures your training standards don't leave when they do.</p>
+      </div>
+
+      <!-- Problem/Solution two-row layout -->
+      <div class="training-grid" data-animate="fade-up">
+
+        <!-- The Problems -->
+        <div class="training-card training-card--problem">
+          <div class="training-card__header">
+            <div class="training-card__icon training-card__icon--red">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5"/><path d="M16 16l16 16M32 16L16 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>The Reality of Swim School Staffing</h3>
+          </div>
+          <ul class="training-list training-list--problems">
+            <li>
+              <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Sky-high turnover</strong>
+                <span>Most instructors are seasonal or part-time — you're constantly retraining</span>
+              </div>
+            </li>
+            <li>
+              <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Young &amp; inexperienced staff</strong>
+                <span>Many instructors are teens or young adults teaching for the first time</span>
+              </div>
+            </li>
+            <li>
+              <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>No consistent teaching method</strong>
+                <span>Every instructor teaches differently — parents notice the inconsistency</span>
+              </div>
+            </li>
+            <li>
+              <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Training lives in people's heads</strong>
+                <span>When experienced staff leave, their knowledge goes with them</span>
+              </div>
+            </li>
+            <li>
+              <svg class="icon icon--x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div>
+                <strong>Onboarding takes too long</strong>
+                <span>New hires shadow for weeks before they can teach independently</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The Solution -->
+        <div class="training-card training-card--solution">
+          <div class="training-card__header">
+            <div class="training-card__icon training-card__icon--green">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5"/><path d="M16 24l6 6 10-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>How SmartMoves Solves This</h3>
+          </div>
+          <div class="training-features">
+            <div class="training-feature">
+              <div class="training-feature__icon">
+                <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/><path d="M10 12h12M10 16h8M10 20h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Standardized Training Modules</strong>
+                <p>Build structured training paths that every new instructor follows — from water safety basics to advanced stroke technique.</p>
+              </div>
+            </div>
+            <div class="training-feature">
+              <div class="training-feature__icon">
+                <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Achievements &amp; Certifications</strong>
+                <p>Instructors complete modules and earn certifications — track who is qualified to teach which levels.</p>
+              </div>
+            </div>
+            <div class="training-feature">
+              <div class="training-feature__icon">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M6 26c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 12l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <strong>Faster Onboarding</strong>
+                <p>New instructors get up to speed in days, not weeks. Guided lesson plans mean they can teach confidently from day one.</p>
+              </div>
+            </div>
+            <div class="training-feature">
+              <div class="training-feature__icon">
+                <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="6" width="26" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M3 12h26" stroke="currentColor" stroke-width="2"/><circle cx="8" cy="9" r="1" fill="currentColor"/><circle cx="12" cy="9" r="1" fill="currentColor"/><rect x="7" y="16" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M19 17h7M19 20h5M19 23h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Competency Dashboard</strong>
+                <p>See at a glance which instructors are trained, who needs upskilling, and where your gaps are — across all locations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom callout -->
+      <div class="training-callout" data-animate="fade-up">
+        <p><strong>The result?</strong> Your swim program stays consistent no matter who's on deck — and new instructors become effective faster than ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5 – MULTI-LOCATION ===== -->
+  <section class="section section--multi" id="multi-location">
+    <div class="container grid grid--2col">
+      <div class="multi__text" data-animate="fade-right">
+        <span class="section__label">Enterprise Ready</span>
+        <h2>For Multi-Location Swim Schools</h2>
+        <p>Manage curriculum, instructors, and reporting across every location from a single platform.</p>
+        <ul class="benefits__list">
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Centralized curriculum control
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Instructor standardization
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            White-label branding
+          </li>
+          <li>
+            <svg class="icon icon--check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Multi-location dashboards
+          </li>
+        </ul>
+      </div>
+      <div class="multi__image" data-animate="fade-left">
+        <div class="placeholder-img placeholder-img--multi">
+          <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="360" rx="16" fill="#EFF6FF"/>
+            <!-- Laptop -->
+            <rect x="120" y="60" width="240" height="160" rx="8" fill="#1E3A5F"/>
+            <rect x="130" y="70" width="220" height="140" rx="4" fill="#fff"/>
+            <!-- Screen content -->
+            <rect x="140" y="80" width="50" height="8" rx="2" fill="#0EA5E9"/>
+            <rect x="140" y="96" width="80" height="6" rx="2" fill="#E2E8F0"/>
+            <rect x="140" y="108" width="70" height="6" rx="2" fill="#E2E8F0"/>
+            <!-- Location cards -->
+            <rect x="140" y="124" width="90" height="50" rx="4" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1"/>
+            <rect x="148" y="132" width="40" height="5" rx="1" fill="#0EA5E9"/>
+            <rect x="148" y="142" width="60" height="4" rx="1" fill="#CBD5E1"/>
+            <rect x="148" y="150" width="50" height="4" rx="1" fill="#CBD5E1"/>
+            <circle cx="168" cy="165" r="5" fill="#22C55E"/>
+            <rect x="250" y="124" width="90" height="50" rx="4" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1"/>
+            <rect x="258" y="132" width="40" height="5" rx="1" fill="#0EA5E9"/>
+            <rect x="258" y="142" width="60" height="4" rx="1" fill="#CBD5E1"/>
+            <rect x="258" y="150" width="50" height="4" rx="1" fill="#CBD5E1"/>
+            <circle cx="278" cy="165" r="5" fill="#22C55E"/>
+            <!-- Laptop base -->
+            <rect x="100" y="220" width="280" height="12" rx="4" fill="#1E3A5F"/>
+            <!-- Pool elements -->
+            <rect x="0" y="280" width="480" height="80" rx="0" fill="#BAE6FD" opacity=".4"/>
+            <path d="M0 290c40-8 80 8 120 0s80-8 120 0 80 8 120 0 80-8 120 0" stroke="#7DD3FC" stroke-width="1.5" fill="none" opacity=".6"/>
+            <!-- Person at laptop -->
+            <circle cx="350" cy="170" r="20" fill="#64748B"/>
+            <rect x="338" y="195" width="24" height="35" rx="6" fill="#64748B"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI MENTION ===== -->
+  <section class="section section--ai" id="ai-powered">
+    <div class="container">
+      <div class="ai-badge" data-animate="fade-up">
+        <div class="ai-badge__icon">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#0EA5E9" stroke-width="2"/><path d="M14 20h12M20 14v12" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="20" r="4" fill="#0EA5E9"/></svg>
+        </div>
+        <div class="ai-badge__text">
+          <h3>Powered by SmartMoves AI</h3>
+          <p>Our intelligent system helps you build and adapt curriculum quickly — so you spend less time planning and more time teaching.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6 – CTA ===== -->
+  <section class="section section--cta" id="demo">
+    <div class="container">
+      <div class="cta-block" data-animate="fade-up">
+        <h2>Ready to Standardize Your Swim Program?</h2>
+        <p>See how SmartMoves Swim can simplify operations and improve retention.</p>
+        <div class="cta-block__buttons">
+          <a href="#" class="btn btn--primary btn--lg" onclick="openDemoModal(event)">Book a Demo</a>
+          <a href="#" class="btn btn--outline-white btn--lg" onclick="openPricingModal(event)">Request Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="navbar__brand">
+            <img class="navbar__logo" src="images/sms.jpg" alt="SmartMoves Swim" />
+          </a>
+          <p class="footer__tagline">The curriculum &amp; progress system built for swim schools.</p>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Parent Company</h4>
+          <ul>
+            <li><a href="https://smartmoves.ai" target="_blank" rel="noopener">SmartMoves.ai</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 SmartMoves Swim. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== DEMO MODAL ===== -->
+  <div class="modal-overlay" id="demoModal">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModals()">&times;</button>
+      <h3>Book a Demo</h3>
+      <p>Fill in your details and we'll schedule a personalized walkthrough.</p>
+      <form class="modal__form" onsubmit="handleFormSubmit(event, 'demo')">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="school" placeholder="Swim School Name" />
+        <input type="tel" name="phone" placeholder="Phone (optional)" />
+        <button type="submit" class="btn btn--primary btn--lg btn--full">
+          <span class="btn-text">Request Demo</span>
+        </button>
+      </form>
+      <div class="modal__success" id="demoSuccess">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#D1FAE5"/><path d="M16 24l6 6 10-12" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Thank you!</h4>
+        <p>We'll be in touch shortly to schedule your demo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PRICING MODAL ===== -->
+  <div class="modal-overlay" id="pricingModal">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModals()">&times;</button>
+      <h3>Request Pricing</h3>
+      <p>Tell us about your school and we'll send you a custom pricing plan.</p>
+      <form class="modal__form" onsubmit="handleFormSubmit(event, 'pricing')">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="school" placeholder="Swim School Name" />
+        <select name="locations">
+          <option value="" disabled selected>Number of Locations</option>
+          <option value="1">1</option>
+          <option value="2-5">2–5</option>
+          <option value="6-10">6–10</option>
+          <option value="10+">10+</option>
+        </select>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">
+          <span class="btn-text">Get Pricing</span>
+        </button>
+      </form>
+      <div class="modal__success" id="pricingSuccess">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#D1FAE5"/><path d="M16 24l6 6 10-12" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h4>Thank you!</h4>
+        <p>We'll send over pricing details shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

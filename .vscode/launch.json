@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Server",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/server.js",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "restart": true,
+            "env": {
+                "PORT": "3000"
+            }
+        },
+        {
+            "name": "Debug Server + Chrome",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/server.js",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "env": {
+                "PORT": "3000"
+            },
+            "serverReadyAction": {
+                "pattern": "http://localhost:([0-9]+)",
+                "uriFormat": "http://localhost:%s",
+                "action": "debugWithChrome",
+                "webRoot": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
