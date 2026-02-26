@@ -872,6 +872,191 @@ h2 {
 }
 
 /* ============================================
+   DIGITIZE YOUR CONTENT SECTION
+   ============================================ */
+.section--digitize {
+  background: var(--gray-50);
+}
+
+.section--digitize .section__subtitle {
+  color: var(--gray-500);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.digitize-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+/* ---- Visual Journey (left) ---- */
+.digitize-visual {
+  padding: 24px;
+}
+
+.digitize-journey {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.digitize-from__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.digitize-from__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 10px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 10px;
+  min-width: 100px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.digitize-from__item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+.digitize-from__item svg {
+  width: 36px;
+  height: 36px;
+}
+.digitize-from__item span {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gray-600);
+  text-align: center;
+}
+
+.digitize-arrow {
+  flex-shrink: 0;
+}
+.digitize-arrow svg {
+  width: 48px;
+  height: 20px;
+}
+
+.digitize-to__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 20px;
+  background: var(--white);
+  border: 2px solid var(--aqua);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(14, 165, 233, .15);
+  min-width: 140px;
+}
+.digitize-to__icon svg {
+  width: 44px;
+  height: 44px;
+}
+.digitize-to__card strong {
+  font-size: .9rem;
+  color: var(--navy);
+}
+.digitize-to__card span {
+  font-size: .75rem;
+  color: var(--gray-500);
+}
+
+/* ---- Steps (right) ---- */
+.digitize-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.digitize-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.digitize-step__num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--aqua);
+  color: var(--white);
+  font-weight: 800;
+  font-size: .95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(14, 165, 233, .25);
+}
+
+.digitize-step strong {
+  display: block;
+  font-size: 1rem;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.digitize-step p {
+  font-size: .9rem;
+  color: var(--gray-500);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ---- Trust badges ---- */
+.digitize-trust {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.digitize-trust__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--aqua);
+}
+.digitize-trust__item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.digitize-trust__item span {
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+@media (max-width: 768px) {
+  .digitize-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .digitize-journey {
+    flex-direction: column;
+  }
+  .digitize-arrow svg {
+    transform: rotate(90deg);
+  }
+  .digitize-trust {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ============================================
    AI SECTION
    ============================================ */
 .section--ai {
