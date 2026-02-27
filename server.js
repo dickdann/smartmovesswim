@@ -24,6 +24,8 @@ const MIME_TYPES = {
   '.mp4':  'video/mp4',
   '.webm': 'video/webm',
   '.pdf':  'application/pdf',
+  '.xml':  'application/xml',
+  '.txt':  'text/plain',
 };
 
 function serve404(res) {

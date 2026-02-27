@@ -10,8 +10,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Favicon (inline SVG data URI) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%230EA5E9'/><text x='16' y='22' text-anchor='middle' font-size='18' font-weight='bold' fill='white'>S</text></svg>" type="image/svg+xml" />
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- SEO -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://smartmovesswim.com/" />
+  <meta name="author" content="SmartMoves Swim" />
+  <meta name="keywords" content="swim school software, swim curriculum, student progress tracking, swim lesson plans, swim instructor training, swim school management, learn to swim program" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://smartmovesswim.com/" />
+  <meta property="og:title" content="SmartMoves Swim — Curriculum &amp; Progress System for Swim Schools" />
+  <meta property="og:description" content="Standardize your swim lessons, track every student's skills, and show parents measurable progress — all in one simple platform." />
+  <meta property="og:image" content="https://smartmovesswim.com/images/smartmoveshero.jpg" />
+  <meta property="og:site_name" content="SmartMoves Swim" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SmartMoves Swim — Curriculum &amp; Progress System for Swim Schools" />
+  <meta name="twitter:description" content="Standardize your swim lessons, track every student's skills, and show parents measurable progress — all in one simple platform." />
+  <meta name="twitter:image" content="https://smartmovesswim.com/images/smartmoveshero.jpg" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SmartMoves Swim",
+    "url": "https://smartmovesswim.com",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Curriculum and progress tracking system built for swim schools. Standardize lessons, track student skills, and show parents measurable progress.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Book a free demo"
+    },
+    "provider": {
+      "@type": "Organization",
+      "name": "SmartMoves Swim",
+      "url": "https://smartmovesswim.com",
+      "logo": "https://smartmovesswim.com/images/sms.jpg",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "SmartMoves.ai",
+        "url": "https://smartmoves.ai"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
   <!-- ===== NAVIGATION ===== -->
@@ -82,32 +133,7 @@
         <p class="problem__statement">Without structure, growth becomes chaos.</p>
       </div>
       <div class="problem__image" data-animate="fade-left">
-        <!-- Illustrated placeholder: instructor with clipboard -->
-        <div class="placeholder-img placeholder-img--problem">
-          <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="480" height="360" rx="16" fill="#EFF6FF"/>
-            <!-- Pool water -->
-            <rect y="220" width="480" height="140" rx="0" fill="#BAE6FD"/>
-            <path d="M0 240c40-10 80 10 120 0s80-10 120 0 80 10 120 0 80-10 120 0" stroke="#7DD3FC" stroke-width="2" fill="none"/>
-            <path d="M0 260c40-10 80 10 120 0s80-10 120 0 80 10 120 0 80-10 120 0" stroke="#7DD3FC" stroke-width="2" fill="none" opacity=".5"/>
-            <!-- Instructor figure -->
-            <circle cx="200" cy="140" r="30" fill="#1E3A5F"/>
-            <rect x="180" y="175" width="40" height="60" rx="8" fill="#1E3A5F"/>
-            <!-- Clipboard -->
-            <rect x="230" y="160" width="40" height="55" rx="4" fill="#fff" stroke="#94A3B8" stroke-width="2"/>
-            <line x1="238" y1="175" x2="262" y2="175" stroke="#CBD5E1" stroke-width="2"/>
-            <line x1="238" y1="185" x2="258" y2="185" stroke="#CBD5E1" stroke-width="2"/>
-            <line x1="238" y1="195" x2="255" y2="195" stroke="#CBD5E1" stroke-width="2"/>
-            <!-- Question marks -->
-            <text x="320" y="130" font-size="32" fill="#F59E0B" font-weight="bold">?</text>
-            <text x="350" y="160" font-size="24" fill="#F59E0B" font-weight="bold" opacity=".6">?</text>
-            <!-- Parents on side -->
-            <circle cx="400" cy="180" r="18" fill="#64748B"/>
-            <rect x="388" y="200" width="24" height="35" rx="5" fill="#64748B"/>
-            <circle cx="440" cy="175" r="16" fill="#94A3B8"/>
-            <rect x="430" y="194" width="20" height="30" rx="5" fill="#94A3B8"/>
-          </svg>
-        </div>
+        <img class="problem-img" src="images/smartmoveshero.jpg" alt="Swim instructor managing lessons at a busy pool" />
       </div>
     </div>
   </section>
@@ -599,6 +625,58 @@
           <h3>Powered by SmartMoves AI</h3>
           <p>Our intelligent system helps you build and adapt curriculum quickly — so you spend less time planning and more time teaching.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION – CONTENT LIBRARY ===== -->
+  <section class="section section--library" id="content-library">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">Ready-Made Content</span>
+        <h2>Need Content? We've Got You Covered.</h2>
+        <p class="section__subtitle">Don't start from scratch. SmartMoves comes loaded with a massive library of professionally designed swim education content — ready to use on day one.</p>
+      </div>
+
+      <!-- Stats grid -->
+      <div class="library-stats" data-animate="fade-up">
+        <div class="library-stat">
+          <div class="library-stat__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M20 20l8 5-8 5z" fill="currentColor" opacity=".8"/></svg>
+          </div>
+          <div class="library-stat__number">200+</div>
+          <div class="library-stat__label">Videos</div>
+          <p class="library-stat__desc">Technique demos, drills, and teaching guides your instructors can reference anytime.</p>
+        </div>
+        <div class="library-stat">
+          <div class="library-stat__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="4" width="32" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M16 14h16M16 20h12M16 26h14M16 32h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="library-stat__number">400+</div>
+          <div class="library-stat__label">Lesson Plans</div>
+          <p class="library-stat__desc">Structured, ready-to-teach lesson plans covering every level and skill progression.</p>
+        </div>
+        <div class="library-stat">
+          <div class="library-stat__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 4v8m0 24v8M4 24h8m24 0h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2.5"/><path d="M18 24h12M24 18v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="library-stat__number">24</div>
+          <div class="library-stat__label">Programs</div>
+          <p class="library-stat__desc">Complete swim programs from babies through to squads — structured and ready to deploy.</p>
+        </div>
+        <div class="library-stat">
+          <div class="library-stat__icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="18" height="14" rx="3" stroke="currentColor" stroke-width="2"/><rect x="26" y="8" width="18" height="14" rx="3" stroke="currentColor" stroke-width="2"/><rect x="4" y="26" width="18" height="14" rx="3" stroke="currentColor" stroke-width="2"/><rect x="26" y="26" width="18" height="14" rx="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="library-stat__number">1,000+</div>
+          <div class="library-stat__label">Activities</div>
+          <p class="library-stat__desc">Drills, games, warm-ups, and skill-building activities to keep lessons engaging and effective.</p>
+        </div>
+      </div>
+
+      <!-- Bottom message -->
+      <div class="library-callout" data-animate="fade-up">
+        <p>Whether you want to use our content as-is, customize it, or build your own alongside it — <strong>the library is yours from day one</strong>.</p>
       </div>
     </div>
   </section>
