@@ -93,11 +93,20 @@
       <div class="hero__overlay"></div>
     </div>
     <div class="container hero__content">
-      <h1 class="hero__headline">The Curriculum &amp; Progress System<br/>Built for Swim Schools</h1>
-      <p class="hero__sub">Standardize your lessons, track every student's skills, and show parents measurable progress&nbsp;— all in one simple platform.</p>
-      <div class="hero__ctas">
-        <a href="#demo" class="btn btn--primary btn--lg">Book a Demo</a>
-        <a href="#how-it-works" class="btn btn--outline btn--lg">See How It Works</a>
+      <div class="hero__photo hero__photo--left">
+        <img src="images/hero.jpg" alt="SmartMoves Swim — swim school curriculum platform" />
+      </div>
+      <div class="hero__text">
+        <h1 class="hero__headline">The Curriculum &amp; Progress System<br/>Built for Swim Schools</h1>
+        <p class="hero__sub">Standardize your lessons, track every student's skills, and show parents measurable progress&nbsp;— all in one simple platform.</p>
+        <div class="hero__ctas">
+          <a href="#" class="btn btn--primary btn--lg" onclick="openDemoModal(event)">Book a Demo</a>
+          <a href="#how-it-works" class="btn btn--outline btn--lg">See How It Works</a>
+          <a href="demos.html" class="btn btn--outline btn--lg">See It In Action ▶</a>
+        </div>
+      </div>
+      <div class="hero__photo hero__photo--right">
+        <img src="images/jump.jpg" alt="Children jumping into a swimming pool" />
       </div>
     </div>
   </header>
@@ -614,6 +623,119 @@
     </div>
   </section>
 
+  <!-- ===== SECTION – PLATFORM FEATURES ===== -->
+  <section class="section section--features" id="platform-features">
+    <div class="container">
+      <div class="section__header" data-animate="fade-up">
+        <span class="section__label">The Complete Platform</span>
+        <h2>Everything Your Swim School Needs — In One Place</h2>
+        <p class="section__subtitle">SmartMoves isn't just curriculum software. It's the most advanced swim school management platform ever built — powerful, intuitive, and endlessly flexible.</p>
+      </div>
+
+      <div class="features-grid" data-animate="fade-up">
+
+        <!-- Feature 1: Unlimited Content -->
+        <div class="pf-card">
+          <div class="pf-card__icon pf-card__icon--aqua">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 8h32v32H8z" stroke="currentColor" stroke-width="2.5" rx="6"/><path d="M16 20l6 4-6 4z" fill="currentColor" opacity=".7"/><rect x="26" y="18" width="10" height="2.5" rx="1" fill="currentColor" opacity=".5"/><rect x="26" y="23" width="7" height="2.5" rx="1" fill="currentColor" opacity=".3"/><rect x="26" y="28" width="9" height="2.5" rx="1" fill="currentColor" opacity=".4"/></svg>
+          </div>
+          <h3>Unlimited Programs, Plans &amp; Activities</h3>
+          <p>Build a rich content library with video, audio, images, and interactive web content. No caps, no tiers — create as much as you need.</p>
+          <ul class="pf-card__tags">
+            <li>Write your own</li>
+            <li>Use our library</li>
+            <li>AI-generated</li>
+          </ul>
+        </div>
+
+        <!-- Feature 2: Class Management -->
+        <div class="pf-card">
+          <div class="pf-card__icon pf-card__icon--navy">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="5" stroke="currentColor" stroke-width="2.5"/><path d="M6 18h36" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="14" r="1.5" fill="currentColor"/><circle cx="22" cy="14" r="1.5" fill="currentColor"/><rect x="12" y="24" width="10" height="3" rx="1" fill="currentColor" opacity=".4"/><rect x="12" y="30" width="8" height="3" rx="1" fill="currentColor" opacity=".3"/><rect x="26" y="24" width="10" height="3" rx="1" fill="currentColor" opacity=".4"/><rect x="26" y="30" width="8" height="3" rx="1" fill="currentColor" opacity=".3"/></svg>
+          </div>
+          <h3>Class Management</h3>
+          <p>Take full control of your timetable. Manage class schedules, assign instructors, track attendance, handle absences, and generate reports — all from one dashboard.</p>
+          <ul class="pf-card__tags">
+            <li>Scheduling</li>
+            <li>Attendance</li>
+            <li>Reports</li>
+            <li>Certificates</li>
+          </ul>
+        </div>
+
+        <!-- Feature 3: Skill Tracking -->
+        <div class="pf-card">
+          <div class="pf-card__icon pf-card__icon--green">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M16 24l5 5 11-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Skill Tracking &amp; Progression</h3>
+          <p>Define your own skill levels and criteria. Track every student through levels and individual skills, then produce beautiful report cards, certificates, and parent-ready summaries.</p>
+          <ul class="pf-card__tags">
+            <li>Custom levels</li>
+            <li>Report cards</li>
+            <li>Certificates</li>
+            <li>Progress history</li>
+          </ul>
+        </div>
+
+        <!-- Feature 4: Portals -->
+        <div class="pf-card">
+          <div class="pf-card__icon pf-card__icon--purple">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="16" r="6" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="34" r="6" stroke="currentColor" stroke-width="2"/><path d="M20 20l4 8m4-8l-4 8" stroke="currentColor" stroke-width="1.5" opacity=".5"/></svg>
+          </div>
+          <h3>Instructor, Parent &amp; Admin Portals</h3>
+          <p>Unlimited logins for your entire team, every parent, and all administrators. Broadcast emails, share updates, communicate in-class, and keep everyone in the loop.</p>
+          <ul class="pf-card__tags">
+            <li>Unlimited users</li>
+            <li>Email broadcasts</li>
+            <li>In-class comms</li>
+          </ul>
+        </div>
+
+        <!-- Feature 5: Instructor Training -->
+        <div class="pf-card">
+          <div class="pf-card__icon pf-card__icon--amber">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6l18 10v2l-18 10L6 18v-2z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 22v10c0 4 5.4 8 12 8s12-4 12-8V22" stroke="currentColor" stroke-width="2"/><path d="M42 18v12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Instructor Training &amp; Certification</h3>
+          <p>Build training modules, assign them to staff, and test knowledge with exams and quizzes — even auto-generate quizzes from your existing content using AI.</p>
+          <ul class="pf-card__tags">
+            <li>Training modules</li>
+            <li>Auto-quizzes</li>
+            <li>Staff certifications</li>
+          </ul>
+        </div>
+
+        <!-- Feature 6: AI-Powered -->
+        <div class="pf-card pf-card--highlight">
+          <div class="pf-card__icon pf-card__icon--aqua">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M18 24h12M24 18v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="6" fill="currentColor" opacity=".15"/><circle cx="24" cy="24" r="3" fill="currentColor" opacity=".3"/></svg>
+          </div>
+          <h3>Powered by Generative AI</h3>
+          <p>Generate lesson plans, activities, quizzes, and entire programs in seconds. SmartMoves uses state-of-the-art AI so you can build world-class content without starting from scratch.</p>
+          <ul class="pf-card__tags">
+            <li>AI lesson plans</li>
+            <li>AI activities</li>
+            <li>AI quizzes</li>
+            <li>AI programs</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom banner -->
+      <div class="features-banner" data-animate="fade-up">
+        <div class="features-banner__inner">
+          <div class="features-banner__text">
+            <h3>Simply the World's Most Advanced Curriculum Management System</h3>
+            <p>State-of-the-art generative AI. The best existing swim content library. The most responsive development team in the industry. All at a price you won't believe.</p>
+          </div>
+          <a href="demos.html" class="btn btn--primary btn--lg">See It In Action ▶</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== AI MENTION ===== -->
   <section class="section section--ai" id="ai-powered">
     <div class="container">
@@ -690,6 +812,7 @@
         <div class="cta-block__buttons">
           <a href="#" class="btn btn--primary btn--lg" onclick="openDemoModal(event)">Book a Demo</a>
           <a href="#" class="btn btn--outline-white btn--lg" onclick="openPricingModal(event)">Request Pricing</a>
+          <a href="demos.html" class="btn btn--outline-white btn--lg">See It In Action ▶</a>
         </div>
       </div>
     </div>
@@ -697,7 +820,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container">
+    <div class="container">in
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="#" class="navbar__brand">
@@ -742,7 +865,7 @@
       <form class="modal__form" onsubmit="handleFormSubmit(event, 'demo')">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Email Address" required />
-        <input type="text" name="school" placeholder="Swim School Name" />
+        <textarea name="school" placeholder="Tell us about your swim school" rows="3"></textarea>
         <input type="tel" name="phone" placeholder="Phone (optional)" />
         <button type="submit" class="btn btn--primary btn--lg btn--full">
           <span class="btn-text">Request Demo</span>
