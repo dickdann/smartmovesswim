@@ -117,6 +117,7 @@ document.addEventListener('keydown', function (e) {
 // ---- API Config ----
 var API_URL = 'https://api.tinshed.co.nz/v1/contact';
 var API_KEY = '5adfc61415da06a515218a6f543a897883abc73d41d933e37f287c199318530e';
+var RECAP_KEY = '6LfSku8pAAAAAN6qtCkf20f3l5ubBIsGdZ1VYV7s';
 
 function handleFormSubmit(e, type) {
   e.preventDefault();
@@ -161,48 +162,57 @@ function handleFormSubmit(e, type) {
   submitBtn.disabled = true;
   btnText.textContent = 'Sending…';
 
-  // POST to API
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', API_URL, true);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.setRequestHeader('x-api-key', API_KEY);
+  // Get reCAPTCHA token, then POST to API
+  grecaptcha.ready(function () {
+    grecaptcha.execute(RECAP_KEY, { action: type === 'demo' ? 'demo_request' : 'pricing_request' }).then(function (token) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', API_URL, true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.setRequestHeader('x-api-key', API_KEY);
 
-  xhr.onload = function () {
-    if (xhr.status >= 200 && xhr.status < 300) {
-      // Success — show confirmation
-      form.classList.add('hidden');
-      successEl.classList.add('show');
+      xhr.onload = function () {
+        if (xhr.status >= 200 && xhr.status < 300) {
+          // Success — show confirmation
+          form.classList.add('hidden');
+          successEl.classList.add('show');
 
-      setTimeout(function () {
-        closeModals();
-        setTimeout(function () {
-          form.classList.remove('hidden');
-          successEl.classList.remove('show');
-          form.reset();
-        }, 400);
-      }, 3000);
-    } else {
-      // Server error
-      var errMsg = 'Something went wrong. Please try again.';
-      try {
-        var errData = JSON.parse(xhr.responseText);
-        if (errData.error) errMsg = errData.error;
-      } catch (_) {}
-      alert(errMsg);
-    }
-    submitBtn.disabled = false;
-    btnText.textContent = originalText;
-  };
+          setTimeout(function () {
+            closeModals();
+            setTimeout(function () {
+              form.classList.remove('hidden');
+              successEl.classList.remove('show');
+              form.reset();
+            }, 400);
+          }, 3000);
+        } else {
+          // Server error
+          var errMsg = 'Something went wrong. Please try again.';
+          try {
+            var errData = JSON.parse(xhr.responseText);
+            if (errData.error) errMsg = errData.error;
+          } catch (_) {}
+          alert(errMsg);
+        }
+        submitBtn.disabled = false;
+        btnText.textContent = originalText;
+      };
 
-  xhr.onerror = function () {
-    alert('Network error — please check your connection and try again.');
-    submitBtn.disabled = false;
-    btnText.textContent = originalText;
-  };
+      xhr.onerror = function () {
+        alert('Network error — please check your connection and try again.');
+        submitBtn.disabled = false;
+        btnText.textContent = originalText;
+      };
 
-  xhr.send(JSON.stringify({
-    from: email,
-    subject: subject,
-    message: message
-  }));
+      xhr.send(JSON.stringify({
+        from: email,
+        subject: subject,
+        message: message,
+        recaptcha_token: token
+      }));
+    }).catch(function () {
+      alert('reCAPTCHA verification failed. Please try again.');
+      submitBtn.disabled = false;
+      btnText.textContent = originalText;
+    });
+  });
 }
