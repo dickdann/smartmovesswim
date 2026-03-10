@@ -207,7 +207,7 @@ function handleFormSubmit(e, type) {
         from: email,
         subject: subject,
         message: message,
-        recaptcha_token: token
+        recaptcha: token
       }));
     }).catch(function () {
       alert('reCAPTCHA verification failed. Please try again.');
